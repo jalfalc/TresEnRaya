@@ -1,14 +1,11 @@
-# Tres en Raya — README / Manual de Usuario
+# Tres en Raya —  Manual de Usuario
 
-> Juego clásico de **3×3** con modo local y contra **IA**.  
-> _Autor: **Jorge Alfonso Alcalde**_
+![alt text](img/portada.png)
 
----
+## Índice
 
-## Tabla de contenidos
-
-- [Tres en Raya — README / Manual de Usuario](#tres-en-raya--readme--manual-de-usuario)
-  - [Tabla de contenidos](#tabla-de-contenidos)
+- [Tres en Raya —  Manual de Usuario](#tres-en-raya---manual-de-usuario)
+  - [Índice](#índice)
   - [Descripción](#descripción)
   - [Características](#características)
   - [Modos de juego](#modos-de-juego)
@@ -25,11 +22,6 @@
   - [Reiniciar partida](#reiniciar-partida)
   - [IA: cómo funciona](#ia-cómo-funciona)
   - [Instalación y ejecución](#instalación-y-ejecución)
-    - [Opción A: Proyecto web estático](#opción-a-proyecto-web-estático)
-    - [Opción B: Proyecto con Node (ejemplo)](#opción-b-proyecto-con-node-ejemplo)
-- [1) Instalar dependencias](#1-instalar-dependencias)
-- [2) Iniciar en desarrollo](#2-iniciar-en-desarrollo)
-- [3) Construir versión de producción](#3-construir-versión-de-producción)
 
 ---
 
@@ -48,9 +40,6 @@ El objetivo es **alinear tres símbolos** en **fila**, **columna** o **diagonal*
 - 🔁 **Reinicio inmediato** de partida.  
 - 🧩 **Validación de jugadas**: no permite colocar sobre casillas ocupadas.  
 - 📱 Pensado para ser **sencillo y directo** (ideal para empezar/enseñar).
-
-<!-- Sugerencia: añade una captura del juego -->
-<!-- ![Captura del juego](./docs/screenshot.png) -->
 
 ---
 
@@ -131,25 +120,11 @@ La IA evalúa el tablero en este **orden de prioridades**:
 3. **Movimiento por defecto**  
    - Si no hay jugadas decisivas, **elige aleatoriamente** una casilla vacía.
 
-> _Idea de mejora (opcional)_: priorizar **centro**, luego **esquinas**, y por último **lados**; o implementar **minimax** para jugar de forma óptima.
-
 ---
 
 ## Instalación y ejecución
 
-> Ajusta esta sección a tu stack real.
-
-### Opción A: Proyecto web estático
 1. Clona/descarga el repositorio.  
 2. Abre `index.html` en tu navegador.
 
-### Opción B: Proyecto con Node (ejemplo)
-```bash
-# 1) Instalar dependencias
-npm install
 
-# 2) Iniciar en desarrollo
-npm run dev
-
-# 3) Construir versión de producción
-npm run build
